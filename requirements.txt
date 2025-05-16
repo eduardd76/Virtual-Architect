@@ -1,0 +1,7 @@
+chainlit>=0.7.500
+langchain
+langchain-community
+openai
+langchain-openai
+elevenlabs==0.2.26
+python-dotenv

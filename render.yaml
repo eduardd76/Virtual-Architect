@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: virtual-edy
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "chainlit run main.py -w --port $PORT"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ELEVENLABS_API_KEY
+        sync: false
